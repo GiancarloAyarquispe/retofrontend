@@ -1,0 +1,17 @@
+module.exports = {
+  default: {
+    paths: ['features/**/*.feature'],
+    require: [
+      'features/support/**/*.js',
+      'features/step_definitions/**/*.js'
+    ],
+    format: [
+      'progress',
+      'html:reports/cucumber-report.html'
+    ],
+    formatOptions: {
+      snippetInterface: 'async-await'
+    },
+    parallel: 1
+  }
+};

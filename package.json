@@ -1,0 +1,18 @@
+{
+  "name": "reto-qa-frontend-saucedemo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Automatizacion E2E de Sauce Demo con Playwright, Cucumber y Page Object Model",
+  "engines": {
+    "node": "22 || 24 || >=26"
+  },
+  "scripts": {
+    "test": "cucumber-js --config cucumber.cjs",
+    "test:login": "cucumber-js --config cucumber.cjs --tags @login",
+    "test:checkout": "cucumber-js --config cucumber.cjs --tags @checkout"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "13.3.0",
+    "@playwright/test": "1.64.0"
+  }
+}
